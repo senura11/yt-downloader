@@ -33,7 +33,10 @@ def yt():
  if mode=='mp4':
   s=v.streams.get_audio_only('mp4')
   os.chdir('/storage/emulated/0/')
-  os.mkdir('yt-music')
+  if 'yt-music' in os.listdir():
+   None
+  else:
+   os.mkdir('yt-music')
   path='/storage/emulated/0/yt-music'
   print('downloading your audio -',v.title)
   s.download(path)
