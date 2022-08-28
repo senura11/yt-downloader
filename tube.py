@@ -3,14 +3,13 @@ import time
 import platform
 import termcolor
 import sys
-def yt(): 
- try:  
+try:  
    import pytube
    import pyfiglet
  except:
      os.system('pip install pytube')
      os.system('pip install pyfiglet')
- import time
+def yt(): 
  text=input("\033[1;31;40menter text = ")
  try:
    global inpu
