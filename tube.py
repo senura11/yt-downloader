@@ -49,7 +49,7 @@ def yt():
     print('your video download complete..\n','video saved in ',path2)
  else:
     quit()
-os.system('termux-setup-storage')
+os.system('termux-setup-storage -y')
 os.system('clear')
 time.sleep(0.5)
 words = "This tool written by senupama isuranda"
