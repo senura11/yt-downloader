@@ -1,5 +1,4 @@
 import os
-import pyfiglet
 import time
 import platform
 import termcolor
