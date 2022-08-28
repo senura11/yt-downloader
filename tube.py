@@ -6,7 +6,7 @@ import sys
 try:  
    import pytube
    import pyfiglet
- except:
+except:
      os.system('pip install pytube')
      os.system('pip install pyfiglet')
 def yt(): 
