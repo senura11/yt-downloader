@@ -9,6 +9,8 @@ try:
 except:
      os.system('pip install pytube')
      os.system('pip install pyfiglet')
+     import pytube
+     import pyfiglet
 def yt(): 
  text=input("\033[1;31;40menter text = ")
  try:
