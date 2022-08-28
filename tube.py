@@ -7,8 +7,10 @@ import sys
 def yt(): 
  try:  
    import pytube
+   import pyfiglet
  except:
      os.system('pip install pytube')
+     os.system('pip install pyfiglet')
  import time
  text=input("\033[1;31;40menter text = ")
  try:
