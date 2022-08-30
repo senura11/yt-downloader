@@ -11,7 +11,8 @@ def video():
     video=pytube.YouTube(watch_url)
     os.system('clear')
     print('------------- video quality --------------')
-    qv=list(enumerate(video.streams.all()))
+    videod=video.streams.all()
+    qv=list(enumerate(videod))
     for i,j in qv:
         if i==13:
             break
@@ -25,7 +26,7 @@ def video():
         os.mkdir('yt-music')#path
     print('\033[1;31;40mdownloading your video - ',video.title)
     path='/storage/emulated/0/yt-music'
-    qv[cho].download(path)
+    videod[cho].download(path)
     print('your video download complete...')
     print('your video saved ',path)
 if __name__=='__main__':
