@@ -19,7 +19,7 @@ time.sleep(0.2)
 os.system('clear')#os command
 print('\n','\n')
 time.sleep(0.2) 
-banner=pyfiglet.Figlet('banner')
+banner=pyfiglet.Figlet('banner3-d')
 banner=banner.renderText('yt-down')
 print('\033[1;32;40m'+str(banner)+'\033[1;34;40m')
 print('       Tool by dark devil     ')
