@@ -52,7 +52,12 @@ elif choice=='3' or choice=='contact us':
       os.system('termux-open https://wa.me/+94787576427?text=hey')
 elif choice=='4' or choice=='Exit':
     exit()
-
+elif choice=='2' or choice=='update tool':
+    os.system('clear')
+    print('\033[1;35;40mupdating.....\')
+    os.system('cd && rm -rv yt-downloader && git clone https://github.com/senura11/yt-downloader.git && cd yt-downloader && clear')
+    print('\033[1;36;40mupdate successful....')
+    print('restarting.......')
         
         
         
