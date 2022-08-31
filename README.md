@@ -1,5 +1,5 @@
 # yt-downloader
-### Command list 👇👇
+### Termux Command list 👇👇
 
 >pkg update 
 
