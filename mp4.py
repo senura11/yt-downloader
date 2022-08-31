@@ -1,6 +1,5 @@
 def mp4():
-    import time,pytube,os,warnings
-    warnings.filterwarnings("ignore")
+    import time,pytube,os
     text=input('\033[1;35;40menter youtube link or text : ')
     time.sleep(0.2)
     try:
@@ -11,13 +10,14 @@ def mp4():
         exit()
     mp4=pytube.YouTube(watch_url)
     dmp4=mp4.streams.get_audio_only('mp4')
-    os.chdir('/storage/emulated/0/')#path
+    os.system('termux-setup-storage')
+    os.chdir('/sdcard')#path
     if 'yt-music' in os.listdir():#path
         None
     else:
         os.mkdir('yt-music')#path
     print('\033[1;31;40mdownloading your audio - '+str(mp4.title))
-    path='/storage/emulated/0/yt-music'#path
+    path='/sdcard/yt-music'#path
     dmp4.download(path)
     print('your audio download complete...')
     print('your audio saved ',path)
