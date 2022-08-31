@@ -19,13 +19,14 @@ def video():
         print(str([i]),'---',j.resolution)
     print()
     cho=int(input('Enter No : '))
-    os.chdir('/storage/emulated/0/')#path
+    os.system('termux-setup-storage')
+    os.chdir('/sdcard')#path
     if 'yt-music' in os.listdir():#path
         None
     else:
         os.mkdir('yt-music')#path
     print('\033[1;31;40mdownloading your video - ',video.title)
-    path='/storage/emulated/0/yt-music'
+    path='/sdcard/yt-music'
     videod[cho].download(path)
     print('your video download complete...')
     print('your video saved ',path)
