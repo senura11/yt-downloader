@@ -58,6 +58,7 @@ elif choice=='2' or choice=='update tool':
     os.system('cd && rm -rv yt-downloader && git clone https://github.com/senura11/yt-downloader.git && cd')
     print('\033[1;36;40mupdate successful....')
     print('now tool run again.......')
+    os.system('cd')
 
         
         
