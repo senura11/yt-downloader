@@ -55,7 +55,7 @@ elif choice=='4' or choice=='Exit':
 elif choice=='2' or choice=='update tool':
     os.system('clear')
     print('\033[1;35;40mupdating...../')
-    os.system('cd && rm -rv yt-downloader && git clone https://github.com/senura11/yt-downloader.git && cd && cd yt-downloader)
+    os.system('cd && rm -rv yt-downloader && git clone https://github.com/senura11/yt-downloader.git && cd && cd yt-downloader')
     print('\033[1;36;40mupdate successful....')
     print('restarting.......')
     os.system('python tube.py')
